@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Trà Sữa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #673ab7;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #563d7c;
+            color: #fff;
+            height: 100vh;
+            padding: 20px;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #76589d;
+        }
+        .sidebar a:hover {
+            background-color: #715c9d;
+        }
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin: 0;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+        }
+        .stats .stat-item {
+            text-align: center;
+            margin: 10px;
+        }
+        .stat-item h4 {
+            color: #673ab7;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Admin Dashboard - Trà Sữa</h1>
+</header>
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Quản lý thực đơn</a>
+        <a href="#">Quản lý đơn hàng</a>
+        <a href="#">Quản lý khách hàng</a>
+        <a href="#">Báo cáo</a>
+        <a href="#">Cài đặt</a>
+    </div>
+    <!-- Content -->
+    <div class="content">
+        <h2>Tổng quan</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <h4>Doanh thu hôm nay</h4>
+                <p><strong>5,000,000 VNĐ</strong></p>
+            </div>
+            <div class="stat-item">
+                <h4>Đơn hàng</h4>
+                <p><strong>45</strong></p>
+            </div>
+            <div class="stat-item">
+                <h4>Món bán chạy</h4>
+                <p><strong>Trà sữa trân châu đường đen</strong></p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Thông báo quan trọng</h3>
+            <p>Nguyên liệu trân châu sắp hết, vui lòng nhập thêm hàng.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

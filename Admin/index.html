@@ -4,65 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard - Trà Sữa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #673ab7;
-            color: #fff;
-            padding: 15px;
-            text-align: center;
-        }
-        .container {
-            display: flex;
-        }
-        .sidebar {
-            width: 20%;
-            background-color: #563d7c;
-            color: #fff;
-            height: 100vh;
-            padding: 20px;
-        }
-        .sidebar a {
-            color: #fff;
-            text-decoration: none;
-            display: block;
-            padding: 10px 0;
-            border-bottom: 1px solid #76589d;
-        }
-        .sidebar a:hover {
-            background-color: #715c9d;
-        }
-        .content {
-            width: 80%;
-            padding: 20px;
-        }
-        .card {
-            background: #fff;
-            margin: 10px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .card h3 {
-            margin: 0;
-        }
-        .stats {
-            display: flex;
-            justify-content: space-around;
-        }
-        .stats .stat-item {
-            text-align: center;
-            margin: 10px;
-        }
-        .stat-item h4 {
-            color: #673ab7;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -72,33 +14,50 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <h2>Menu</h2>
-        <a href="#">Dashboard</a>
-        <a href="#">Quản lý thực đơn</a>
-        <a href="#">Quản lý đơn hàng</a>
-        <a href="#">Quản lý khách hàng</a>
-        <a href="#">Báo cáo</a>
-        <a href="#">Cài đặt</a>
+        <a href="#report">Báo cáo doanh thu</a>
+        <a href="#menu-management">Quản lý thực đơn</a>
+        <a href="#order-management">Quản lý đơn hàng</a>
+        <a href="#customer-management">Quản lý khách hàng</a>
+        <a href="#settings">Cài đặt</a>
     </div>
     <!-- Content -->
     <div class="content">
-        <h2>Tổng quan</h2>
-        <div class="stats">
-            <div class="stat-item">
-                <h4>Doanh thu hôm nay</h4>
-                <p><strong>5,000,000 VNĐ</strong></p>
-            </div>
-            <div class="stat-item">
-                <h4>Đơn hàng</h4>
-                <p><strong>45</strong></p>
-            </div>
-            <div class="stat-item">
-                <h4>Món bán chạy</h4>
-                <p><strong>Trà sữa trân châu đường đen</strong></p>
-            </div>
+        <div id="report" class="section">
+            <h2>Doanh thu</h2>
+            <p>Chào mừng bạn đến với hệ thống quản trị trà sữa!</p>
+            <p>Doanh thu hôm nay: <strong>5,000,000 VNĐ</strong></p>
+            <p>Tổng số đơn hàng: <strong>45</strong></p>
         </div>
-        <div class="card">
-            <h3>Thông báo quan trọng</h3>
-            <p>Nguyên liệu trân châu sắp hết, vui lòng nhập thêm hàng.</p>
+        <div id="menu-management" class="section">
+            <h2>Quản lý thực đơn</h2>
+            <p>Thêm, sửa, xóa các món trà sữa.</p>
+            <ul>
+                <li>Trà sữa trân châu đường đen</li>
+                <li>Trà sữa matcha</li>
+                <li>Macchiato</li>
+            </ul>
+            <button>Thêm món mới</button>
+        </div>
+        <div id="order-management" class="section">
+            <h2>Quản lý đơn hàng</h2>
+            <p>Danh sách các đơn hàng:</p>
+            <ul>
+                <li>Đơn hàng #1001: Trà sữa matcha - 2 ly</li>
+                <li>Đơn hàng #1002: Trà sữa trân châu - 1 ly</li>
+            </ul>
+        </div>
+        <div id="customer-management" class="section">
+            <h2>Quản lý khách hàng</h2>
+            <p>Danh sách khách hàng:</p>
+            <ul>
+                <li>Nguyễn Văn A - 5 đơn hàng</li>
+                <li>Trần Thị B - 3 đơn hàng</li>
+            </ul>
+        </div>
+        <div id="settings" class="section">
+            <h2>Cài đặt</h2>
+            <p>Thay đổi thông tin cửa hàng:</p>
+            <button>Chỉnh sửa</button>
         </div>
     </div>
 </div>

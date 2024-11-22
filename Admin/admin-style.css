@@ -102,3 +102,26 @@ header {
 /*.logout:hover {*/
 /*    background-color: #e64a19;*/
 /*}*/
+
+.list-section{
+    padding: 5px;
+    border: 1px solid #76589d;
+    margin: 5px;
+}
+.list-section ul{
+    padding: 0;
+}
+
+.list-section ul li{
+    list-style: none;
+    border-top: 1px solid #76589d;
+    padding: 4px 0;
+
+}
+.list-section ul li div{
+    display: inline-block;
+
+}
+
+
+

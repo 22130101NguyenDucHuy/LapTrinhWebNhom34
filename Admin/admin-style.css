@@ -64,7 +64,7 @@ header {
 
 .section {
     position: relative;
-    width: calc(100% - 250px);
+    width: 100%;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
@@ -82,23 +82,63 @@ header {
     color: #555;
 }
 
-.sidebar .menu h2 {
-    font-size: 18px;
+.sidebar .menu span{
+    display: inline-block;
+    padding: 5px;
+    font-size: 28px;
     color: #fff;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-/*.logout {*/
-/*    color: #fff;*/
-/*    text-decoration: none;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #ff5722;*/
-/*    border-radius: 4px;*/
-/*    display: inline-block;*/
-/*    margin-top: 20px;*/
-/*    transition: background-color 0.3s ease;*/
-/*}*/
+.list-section {
+    padding: 10px;
+    border: 1px solid #76589d;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
 
-/*.logout:hover {*/
-/*    background-color: #e64a19;*/
-/*}*/
+.list-title,
+.list-section ul li {
+    display: grid;
+    grid-template-columns: 10% 40% 30% 10%;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #76589d;
+}
+
+.list-title {
+    font-weight: bold;
+    background-color: #f3e5f5;
+    text-transform: uppercase;
+}
+
+.list-section ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-section ul li {
+    list-style: none;
+}
+
+.list-section ul li:hover {
+    background-color: #f9f2ff;
+}
+
+.column {
+    text-align: left;
+}
+
+.column.stt {
+    text-align: center;
+}
+.column.price,
+.column.type {
+    text-align: right;
+}
+
+
+

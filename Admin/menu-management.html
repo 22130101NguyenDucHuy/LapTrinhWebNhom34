@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Admin - Thực đơn</title>
     <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header>
@@ -28,39 +29,81 @@
     <div class="content">
         <!-- Menu Management Section -->
         <div id="menu-management" class="section">
-            <span>Danh sách thực đơn</span>
-            <div id="menu-box" class="list-section">
-                <div class="list-title">
-                    <div class="column stt">STT</div>
-                    <div class="column name">Tên</div>
-                    <div class="column price">Giá</div>
-                    <div class="column type">Loại</div>
+            <h2>Danh sách thực đơn</h2>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Example of a drink item -->
+                <div class="menu-item">
+                    <img src="img_trasua/ccd.png" alt="Trà sữa trân châu" class="menu-img">
+                    <h3 class="menu-name">Trà sữa trân châu</h3>
+                    <p class="menu-category">Danh mục: Trà sữa</p>
+                    <p class="menu-price">Giá: 45.000đ</p>
+                    <button class="edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button>
                 </div>
-                <ul>
-                    <li>
-                        <div class="column stt">1</div>
-                        <div class="column name">Trà sữa trân châu đường đen</div>
-                        <div class="column price">20000đ</div>
-                        <div class="column type">Đồ uống</div>
-                    </li>
-                    <li>
-                        <div class="column stt">2</div>
-                        <div class="column name">Trà đào cam sả</div>
-                        <div class="column price">25000đ</div>
-                        <div class="column type">Đồ uống</div>
-                    </li>
-                    <li>
-                        <div class="column stt">3</div>
-                        <div class="column name">Cafe sữa đá</div>
-                        <div class="column price">30000đ</div>
-                        <div class="column type">Đồ uống</div>
-                    </li>
-                </ul>
+                <div class="menu-item">
+                    <img src="img_trasua/cskt.png" alt="Trà đào cam sả" class="menu-img">
+                    <h3 class="menu-name">Trà đào cam sả</h3>
+                    <p class="menu-category">Danh mục: Trà trái cây</p>
+                    <p class="menu-price">Giá: 50.000đ</p>
+                    <button class="edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                </div>
+                <div class="menu-item">
+                    <img src="img_trasua/dxcc.png" alt="Trà sữa matcha" class="menu-img">
+                    <h3 class="menu-name">Trà sữa matcha</h3>
+                    <p class="menu-category">Danh mục: Trà sữa</p>
+                    <p class="menu-price">Giá: 55.000đ</p>
+                    <button class="edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button></div>
+
+                <div class="menu-item">
+                    <img src="img_trasua/dxck.png" alt="Hồng trà sữa" class="menu-img">
+                    <h3 class="menu-name">Hồng trà sữa</h3>
+                    <p class="menu-category">Danh mục: Trà sữa</p>
+                    <p class="menu-price">Giá: 40.000đ</p>
+                    <button class="edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button></div>
+
+                <div class="menu-item">
+                    <img src="img_trasua/dxdt.png" alt="Trà sen vàng" class="menu-img">
+                    <h3 class="menu-name">Trà sen vàng</h3>
+                    <p class="menu-category">Danh mục: Trà đặc biệt</p>
+                    <p class="menu-price">Giá: 60.000đ</p>
+                    <button class="edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button></div>
+
+                <div class="menu-item">
+                    <img src="img_trasua/dxmc.png" alt="Trà xanh nha đam" class="menu-img">
+                    <h3 class="menu-name">Trà xanh nha đam</h3>
+                    <p class="menu-category">Danh mục: Trà trái cây</p>
+                    <p class="menu-price">Giá: 48.000đ</p>
+                    <button class="edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button></div>
+
+
+
             </div>
 
-            <button>Thêm món mới</button>
-        </div>
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">Next</button>
+            </div>
 
+            <button class="add-item-btn">Thêm món mới</button>
+        </div>
+    </div>
 
     </div>
 </div>

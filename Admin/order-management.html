@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Admin - Đơn hàng</title>
     <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header>
@@ -30,33 +31,134 @@
         <div id="order-management" class="section">
             <h2>Quản lý đơn hàng</h2>
             <p>Danh sách các đơn hàng:</p>
-            <div id="menu-box" class="list-section">
+            <div id="menu-box" class="list-section list-scroll">
                 <div class="list-title">
                     <div class="column stt">STT</div>
-                    <div class="column name">Tên</div>
-                    <div class="column price">Giá</div>
-                    <div class="column type">Loại</div>
+                    <div class="column order-id">Mã Đơn</div>
+                    <div class="column customer">Khách Hàng</div>
+                    <div class="column total-price">Tổng Tiền</div>
+                    <div class="column status">Trạng Thái</div>
+                    <div class="column action">Hành Động</div>
                 </div>
                 <ul>
                     <li>
                         <div class="column stt">1</div>
-                        <div class="column name">Trà sữa trân châu đường đen</div>
-                        <div class="column price">20000đ</div>
-                        <div class="column type">Đồ uống</div>
+                        <div class="column order-id">#001</div>
+                        <div class="column customer">Nguyễn Văn A</div>
+                        <div class="column total-price">50,000đ</div>
+                        <div class="column status">Đang Giao</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
                     </li>
                     <li>
                         <div class="column stt">2</div>
-                        <div class="column name">Trà đào cam sả</div>
-                        <div class="column price">25000đ</div>
-                        <div class="column type">Đồ uống</div>
+                        <div class="column order-id">#002</div>
+                        <div class="column customer">Trần Thị B</div>
+                        <div class="column total-price">75,000đ</div>
+                        <div class="column status">Đã Giao</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
                     </li>
                     <li>
                         <div class="column stt">3</div>
-                        <div class="column name">Cafe sữa đá</div>
-                        <div class="column price">30000đ</div>
-                        <div class="column type">Đồ uống</div>
+                        <div class="column order-id">#003</div>
+                        <div class="column customer">Lê Văn C</div>
+                        <div class="column total-price">120,000đ</div>
+                        <div class="column status">Chờ Xử Lý</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="column stt">4</div>
+                        <div class="column order-id">#004</div>
+                        <div class="column customer">Ngô Thị D</div>
+                        <div class="column total-price">300,000đ</div>
+                        <div class="column status">Đang Giao</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="column stt">5</div>
+                        <div class="column order-id">#005</div>
+                        <div class="column customer">Phạm Văn E</div>
+                        <div class="column total-price">600,000đ</div>
+                        <div class="column status">Đã Hủy</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="column stt">6</div>
+                        <div class="column order-id">#006</div>
+                        <div class="column customer">Nguyễn Văn F</div>
+                        <div class="column total-price">45,000đ</div>
+                        <div class="column status">Đang Giao</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="column stt">7</div>
+                        <div class="column order-id">#007</div>
+                        <div class="column customer">Đinh Thị G</div>
+                        <div class="column total-price">80,000đ</div>
+                        <div class="column status">Đã Giao</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="column stt">8</div>
+                        <div class="column order-id">#008</div>
+                        <div class="column customer">Trịnh Văn H</div>
+                        <div class="column total-price">950,000đ</div>
+                        <div class="column status">Chờ Xử Lý</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="column stt">9</div>
+                        <div class="column order-id">#009</div>
+                        <div class="column customer">Hoàng Văn I</div>
+                        <div class="column total-price">150,000đ</div>
+                        <div class="column status">Đang Giao</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="column stt">10</div>
+                        <div class="column order-id">#010</div>
+                        <div class="column customer">Phạm Thị K</div>
+                        <div class="column total-price">70,000đ</div>
+                        <div class="column status">Đã Giao</div>
+                        <div class="column action">
+                            <a href="#" title="Sửa"><i class="fa fa-edit"></i></a>
+                            <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                        </div>
                     </li>
                 </ul>
+            </div>
+            <div class="pagination">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">Next</button>
             </div>
         </div>
     </div>

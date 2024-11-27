@@ -95,7 +95,7 @@ header {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    grid-template-rows: repeat(1, 1fr);
+    /*grid-template-rows: repeat(1, 1fr);*/
     gap: 20px;
     margin: 20px 0;
 }
@@ -111,7 +111,7 @@ header {
 
 .menu-img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -284,4 +284,34 @@ header {
 
 .list-scroll::-webkit-scrollbar-track {
     background: #f3e5f5;
+}
+
+.filter i {
+    font-size: 10px;
+    color: black;
+    cursor: pointer;
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.filter i:hover {
+    color: #562ea1;
+    transform: scale(1.2);
+}
+
+.filter i.fa-filter {
+    content: '\f0b0'; /* Icon filter */
+}
+
+/* Tăng dần - ASC */
+.filter i.fa-sort-up {
+    content: '\f0de'; /* Icon tăng dần */
+    color: #28a745;
+}
+
+/* Giảm dần - DESC */
+.filter i.fa-sort-down {
+    content: '\f0dd'; /* Icon giảm dần */
+    color: #dc3545;
 }

@@ -1,0 +1,132 @@
+.list-section {
+    border: 1px solid #76589d;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.list-title,
+.list-section ul li {
+    display: grid;
+    grid-template-columns: 5% 10% 30% 20% 20% 10%;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #76589d;
+}
+.list-section ul li:last-child {
+    border-bottom: none;
+}
+
+.list-title {
+    font-weight: bold;
+    background-color: #f3e5f5;
+    text-transform: uppercase;
+}
+
+.list-section ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-section ul li {
+    list-style: none;
+}
+
+.list-section ul li:hover {
+    background-color: #f9f2ff;
+}
+
+.column {
+    text-align: left;
+}
+
+.column.stt {
+    text-align: center;
+}
+.column.price,
+.column.type {
+    text-align: right;
+}.column.action {
+     text-align: center;
+ }
+
+.column.action a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #673ab7;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.column.action a:hover {
+    color: #562ea1;
+    transform: scale(1.2);
+}
+.list-scroll {
+    max-height: 450px; /* Tối đa 10 dòng với chiều cao mỗi dòng khoảng 45px */
+    overflow-y: auto;
+    scrollbar-width: thin; /* Thanh cuộn mảnh hơn (trong trình duyệt hỗ trợ) */
+}
+
+.list-scroll ul {
+    margin: 0;
+    padding: 0;
+}
+
+.list-scroll ul li {
+    height: 20px;
+    display: grid;
+    grid-template-columns: 5% 10% 30% 20% 20% 10%; /* Đảm bảo khớp với các cột */
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #76589d;
+}
+
+/* Tùy chỉnh thanh cuộn cho đẹp hơn */
+.list-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list-scroll::-webkit-scrollbar-thumb {
+    background: #673ab7;
+    border-radius: 5px;
+}
+
+.list-scroll::-webkit-scrollbar-thumb:hover {
+    background: #562ea1;
+}
+
+.list-scroll::-webkit-scrollbar-track {
+    background: #f3e5f5;
+}
+
+.filter i {
+    font-size: 10px;
+    color: black;
+    cursor: pointer;
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.filter i:hover {
+    color: #562ea1;
+    transform: scale(1.2);
+}
+
+.filter i.fa-filter {
+    content: '\f0b0'; /* Icon filter */
+}
+
+/* Tăng dần - ASC */
+.filter i.fa-sort-up {
+    content: '\f0de'; /* Icon tăng dần */
+    color: #28a745;
+}
+
+/* Giảm dần - DESC */
+.filter i.fa-sort-down {
+    content: '\f0dd'; /* Icon giảm dần */
+    color: #dc3545;
+}

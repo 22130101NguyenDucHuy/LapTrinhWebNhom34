@@ -1,0 +1,61 @@
+.customer-grid {
+    display: grid;
+    grid-template-columns: 5% 30% 20% 20% 15%;
+    gap: 10px;
+    border: 1px solid #76589d;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.customer-item {
+    display: grid;
+    grid-template-columns: 5% 20% 20% 20% 15%;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #76589d;
+}
+
+.customer-item:last-child {
+    border-bottom: none;
+}
+
+.customer-item:hover {
+    background-color: #f9f2ff;
+}
+
+.customer-id,
+.customer-name,
+.customer-orders,
+.customer-reviews {
+    text-align: left;
+}
+
+.customer-id {
+    text-align: center;
+}
+
+.customer-orders,
+.customer-reviews {
+    text-align: right;
+}
+
+.customer-action {
+    text-align: center;
+}
+
+.customer-action button {
+    background: none;
+    border: none;
+    color: #673ab7;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.customer-action button:hover {
+    color: #562ea1;
+    transform: scale(1.2);
+}
+
+

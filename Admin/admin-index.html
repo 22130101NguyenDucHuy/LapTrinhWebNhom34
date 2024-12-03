@@ -12,12 +12,12 @@
 <div class="container">
     <!-- Sidebar -->
     <div class="sidebar">
-            <h2>Menu</h2>
-            <a href="admin-index.html">Quản lý doanh thu</a>
-            <a href="menu-management.html">Quản lý thực đơn</a>
-            <a href="order-management.html">Quản lý đơn hàng</a>
-            <a href="customer.html">Quản lý khách hàng</a>
-            <a href="setting-admin.html">Cài đặt</a>
+        <h2>Menu</h2>
+        <a href="admin-index.html">Quản lý doanh thu</a>
+        <a href="menu-management.html">Quản lý thực đơn</a>
+        <a href="order-management.html">Quản lý đơn hàng</a>
+        <a href="customer.html">Quản lý khách hàng</a>
+        <a href="setting-admin.html">Cài đặt</a>
         <div class="logout">
             <a href="../html/index.html" class="logout"> Logout</a>
         </div>
@@ -26,11 +26,28 @@
     <!-- Content -->
     <div class="content">
         <div id="dashboard" class="section">
-            <h2>Dashboard</h2>
-            <p>Chào mừng bạn đến với hệ thống quản trị trà sữa!</p>
-            <p>Doanh thu hôm nay: <strong>5,000,000 VNĐ</strong></p>
-            <p>Tổng số đơn hàng: <strong>45</strong></p>
+            <h2 class="welcome-message">🌟 Chào mừng bạn đến với hệ thống quản trị trà sữa! 🌟</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <p>Tổng doanh thu:</p>
+                    <p><strong class="revenue">5,000,000 VNĐ</strong></p>
+                </div>
+                <div class="stat-item">
+                    <p>Tổng số đơn hàng:</p>
+                    <p><strong class="orders">45</strong></p>
+                </div>
+            </div>
+            <div class="range-selector">
+                <label for="time-range">Chọn phạm vi tính toán:</label>
+                <select id="time-range">
+                    <option value="today">Hôm nay</option>
+                    <option value="week">Tuần này</option>
+                    <option value="month">Tháng này</option>
+                    <option value="year">Năm nay</option>
+                </select>
+            </div>
         </div>
+
     </div>
     <div class="content">
         <div id="chart" class="section">

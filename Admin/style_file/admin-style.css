@@ -108,6 +108,62 @@ header {
     transform: scale(1.2);
 }
 
+.welcome-message {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.stats {
+    margin-top: 20px;
+}
+
+.stat-item {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.stat-left {
+    float: left;
+}
+
+.stat-right {
+    float: right;
+}
+
+.stat-item p {
+    margin: 5px 0;
+}
+
+.revenue {
+    font-size: 1.5rem;
+    color: #FF5733;
+}
+
+.orders {
+    font-size: 1.5rem;
+    color: #3498DB;
+}
+
+.range-selector {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.range-selector label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.range-selector select {
+    padding: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -144,4 +200,7 @@ header {
     background-color: #563d7c;
 }
 
+#chart{
+    text-align: center;
+}
 

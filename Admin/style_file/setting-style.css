@@ -3,18 +3,18 @@
 }
 
 .create-form {
-    display: block; /* Dạng khối */
+    display: block;
 }
 
 .create-form label {
-    display: block; /* Đảm bảo nhãn và input trên 1 dòng thẳng */
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 .create-form input, .create-form select, .create-form button {
-    display: block; /* Để mỗi phần tử xuống dòng */
-    width: 100%; /* Chiều rộng đủ 100% */
+    display: block;
+    width: 99%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;

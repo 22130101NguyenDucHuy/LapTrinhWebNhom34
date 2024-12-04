@@ -102,6 +102,9 @@ header {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+.lable-dash{
+    font-size: 25px;
+}
 
 .stats {
     margin-top: 20px;

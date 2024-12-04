@@ -96,18 +96,6 @@ header {
     font-weight: bold;
 }
 
-
-.edit-button i {
-    font-size: 18px;
-    color: #673ab7;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.edit-button:hover i {
-    color: #562ea1;
-    transform: scale(1.2);
-}
-
 .welcome-message {
     text-align: center;
     color: #4CAF50;

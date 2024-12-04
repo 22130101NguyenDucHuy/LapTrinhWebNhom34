@@ -1,0 +1,35 @@
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.create-form {
+    display: block; /* Dạng khối */
+}
+
+.create-form label {
+    display: block; /* Đảm bảo nhãn và input trên 1 dòng thẳng */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-form input, .create-form select, .create-form button {
+    display: block; /* Để mỗi phần tử xuống dòng */
+    width: 100%; /* Chiều rộng đủ 100% */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    font-size: 16px;
+}
+
+.create-form button {
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.create-form button:hover {
+    background: #2980b9;
+}

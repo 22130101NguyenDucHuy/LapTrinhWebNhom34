@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Khuyến Mãi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style_file/admin-style.css">
+    <link rel="stylesheet" href="style_file/menu-style.css">
+    <link rel="stylesheet" href="style_file/promotion.css">
 </head>
 <body>
 <header>
     <h1>Danh Sách Khuyến Mãi</h1>
 </header>
 <div class="container">
+    <!-- Sidebar -->
     <div class="sidebar">
         <div class="menu">
             <h2>Menu</h2>
@@ -20,23 +24,60 @@
             <a href="customer.html">Quản lý khách hàng</a>
             <a href="setting-admin.html">Cài đặt</a>
         </div>
-        <a href="../html/index.html" class="logout"> Logout</a>
+        <a href="../html/index.html" class="logout">Logout</a>
     </div>
 
     <!-- Content -->
-    <div class="promotion-list">
-        <!-- Một khuyến mãi -->
-        <div class="promotion-item">
-            <img src="path/to/image.jpg" alt="Hình ảnh sản phẩm">
-            <div class="promotion-details">
-                <h3>Tên Sản Phẩm</h3>
-                <p>Giá: 100,000 VND</p>
-                <p>Ngày bắt đầu: 01-12-2024</p>
-                <p>Ngày hết hạn: 31-12-2024</p>
-                <p>Thông tin khuyến mãi: Giảm 20%</p>
+    <div class="content">
+        <div id="promotion-management" class="section">
+            <h2>Danh sách khuyến mãi</h2>
+            <div class="promotion-grid">
+                <!-- Một khuyến mãi -->
+                <div class="promotion-item">
+                    <h3 class="promotion-id">ID: 001</h3>
+                    <img src="img_trasua/ccd.png" alt="Trà sữa trân châu" class="promotion-img">
+                    <h3 class="menu-name">Trà sữa trân châu</h3>
+                    <p class="promotion-content">Khuyến mãi 20%</p>
+                    <p class="promotion-date">Ngày thêm: 01-12-2024</p>
+                    <p class="promotion-date">Ngày hết: 31-12-2024</p>
+                    <p class="promotion-status">Tình trạng: <span class="active">Còn hiệu lực</span></p>
+                    <button class="button edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="button remove-button" title="Xóa">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </div>
+
+                <!-- Thêm các khuyến mãi khác -->
+                <div class="promotion-item">
+                    <h3 class="promotion-id">ID: 002</h3>
+                    <img src="img_trasua/cskt.png" alt="Trà đào cam sả" class="promotion-img">
+                    <h3 class="menu-name">Trà đào cam sả</h3>
+                    <p class="promotion-content">Miễn phí ship cho đơn hàng từ 100k</p>
+                    <p class="promotion-date">Ngày thêm: 10-11-2024</p>
+                    <p class="promotion-date">Ngày hết: 20-11-2024</p>
+                    <p class="promotion-status">Tình trạng: <span class="expired">Hết hiệu lực</span></p>
+                    <button class="button edit-button" title="Chỉnh sửa">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="button remove-button" title="Xóa">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </div>
             </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">Next</button>
+            </div>
+
+            <button class="add-item-btn">Thêm khuyến mãi mới</button>
         </div>
-        <!-- Thêm nhiều sản phẩm khác -->
     </div>
 </div>
 </body>

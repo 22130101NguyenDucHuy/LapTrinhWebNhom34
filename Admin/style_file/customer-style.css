@@ -1,61 +1,111 @@
-.customer-grid {
-    display: grid;
-    grid-template-columns: 5% 30% 20% 20% 15%;
-    gap: 10px;
+.list-section {
     border: 1px solid #76589d;
+    margin: 10px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    padding: 10px;
 }
 
-.customer-item {
+.list-title,
+.list-section ul li {
     display: grid;
-    grid-template-columns: 5% 20% 20% 20% 15%;
+    grid-template-columns: 5% 10% 30% 10% 10% 10% 10% 10%;
+    gap: 10px;
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #76589d;
 }
 
-.customer-item:last-child {
+.list-title {
+    font-weight: bold;
+    background-color: #f3e5f5;
+    text-transform: uppercase;
+}
+
+.list-section ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-section ul li {
+    list-style: none;
+
+}
+
+.list-section ul li:last-child {
     border-bottom: none;
 }
 
-.customer-item:hover {
+.list-section ul li:hover {
     background-color: #f9f2ff;
 }
 
-.customer-id,
-.customer-name,
-.customer-orders,
-.customer-reviews {
+/* Thanh cuộn */
+.list-scroll {
+    max-height: 450px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.list-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.list-scroll::-webkit-scrollbar-thumb {
+    background: #673ab7;
+    border-radius: 5px;
+}
+
+.list-scroll::-webkit-scrollbar-thumb:hover {
+    background: #562ea1;
+}
+
+.list-scroll::-webkit-scrollbar-track {
+    background: #f3e5f5;
+}
+
+/* Định dạng cột */
+.column {
     text-align: left;
 }
 
-.customer-id {
+.column.id {
     text-align: center;
 }
 
-.customer-orders,
-.customer-reviews {
+.column.price,
+.column.type {
     text-align: right;
 }
 
-.customer-action {
+.column.action {
     text-align: center;
 }
 
-.customer-action button {
-    background: none;
-    border: none;
-    color: #673ab7;
+/* Hành động */
+.column.action a {
+    margin: 0 5px;
+    text-decoration: none;
     font-size: 18px;
-    cursor: pointer;
+    color: #673ab7;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.customer-action button:hover {
+.column.action a:hover {
     color: #562ea1;
     transform: scale(1.2);
 }
 
+/* Màu trạng thái */
+.status.active,
+.admin.yes,
+.column.action a.active {
+    color: green;
+    font-weight: bold;
+}
 
+.status.inactive,
+.admin.no,
+.column.action a.inactive {
+    color: red;
+    font-weight: bold;
+}

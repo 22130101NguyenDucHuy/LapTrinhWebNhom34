@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Khách hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style_file/admin-style.css">
     <link rel="stylesheet" href="style_file/customer-style.css">
+    <link rel="stylesheet" href="style_file/menu-style.css">
 </head>
 <body>
 <header>
@@ -25,55 +29,86 @@
         <a href="../html/index.html" class="logout"> Logout</a>
     </div>
 
-    <!-- Content -->
     <div class="content">
         <div id="customer-management" class="section">
             <h2>Quản lý khách hàng</h2>
             <p>Danh sách khách hàng:</p>
-                <!-- Customer Grid -->
-                <div class="customer-grid">
-                    <div class="customer-item">
-                        <div class="customer-id">1</div>
-                        <div class="customer-name">Nguyễn Văn A</div>
-                        <div class="customer-orders">12</div>
-                        <div class="customer-reviews">8</div>
-                        <div class="customer-action">
-                            <button class="edit-button" title="Chỉnh sửa">
-                                <i class="fas fa-edit"></i>
+            <div class="list-section list-scroll">
+                <div class="list-title">
+                    <div class="column id">ID</div>
+                    <div class="column name">Tên</div>
+                    <div class="column address">Địa chỉ</div>
+                    <div class="column orders-customer">Số Đơn Hàng</div>
+                    <div class="column reviews">Số Đánh Giá</div>
+                    <div class="column status">Trạng Thái</div>
+                    <div class="column admin">Admin</div>
+                    <div class="column action">Hành Động</div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="column id">1</div>
+                        <div class="column name">Nguyễn Văn A</div>
+                        <div class="column address">45/3B Đường Lý Thường Kiệt, Phường 7, Quận Tân Bình, TP. Hồ Chí Minh</div>
+                        <div class="column orders-customer">12</div>
+                        <div class="column reviews">8</div>
+                        <div class="column status active">Active</div>
+                        <div class="column admin yes">Yes</div>
+                        <div class="column action action-icons">
+                            <button>
+                                <a href="#" title="Chặn" class="active"><i class="fa fa-ban"></i></a>
                             </button>
-                            <button class="delete-button" title="Xóa">
-                                <i class="fas fa-trash-alt"></i>
+                            <button>
+                                <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
                             </button>
                         </div>
-                    </div>
-                    <div class="customer-item">
-                        <div class="customer-id">2</div>
-                        <div class="customer-name">Trần Thị B</div>
-                        <div class="customer-orders">25</div>
-                        <div class="customer-reviews">15</div>
-                        <div class="customer-action">
-                            <button class="edit-button" title="Chỉnh sửa">
-                                <i class="fas fa-edit"></i>
+                    </li>
+                    <li>
+                        <div class="column id">2</div>
+                        <div class="column name">Trần Thị B</div>
+                        <div class="column address">Căn hộ A-502, Chung cư Sky Garden, Phường Tân Phong, Quận 7, TP. Hồ Chí Minh</div>
+                        <div class="column orders-customer">20</div>
+                        <div class="column reviews">1</div>
+                        <div class="column status inactive">Inactive</div>
+                        <div class="column admin no">No</div>
+                        <div class="column action action-icons">
+                            <button>
+                                <a href="#" title="Chặn" class="inactive"><i class="fa fa-ban"></i></a>
                             </button>
-                            <button class="delete-button" title="Xóa">
-                                <i class="fas fa-trash-alt"></i>
+                            <button>
+                                <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
                             </button>
                         </div>
-                    </div>
+                    </li>
+                    <li>
+                        <div class="column id">3</div>
+                        <div class="column name">Lê Văn C</div>
+                        <div class="column address">123 Nguyễn Đình Chiểu, Phường 6, Quận 3, TP. Hồ Chí Minh</div>
+                        <div class="column orders-customer">2</div>
+                        <div class="column reviews">0</div>
+                        <div class="column status active">Active</div>
+                        <div class="column admin no">No</div>
+                        <div class="column action action-icons">
+                            <button>
+                                <a href="#" title="Chặn" class="active"><i class="fa fa-ban"></i></a>
+                            </button>
+                            <button>
+                                <a href="#" title="Xóa"><i class="fa fa-trash"></i></a>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
 
-                </div>
-
-                <!-- Pagination -->
-                <div class="pagination">
-                    <button class="page-btn">1</button>
-                    <button class="page-btn">2</button>
-                    <button class="page-btn">3</button>
-                    <span class="dots">...</span>
-                    <button class="page-btn">Next</button>
-                </div>
+            </div>
+            <div class="pagination">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">Next</button>
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>

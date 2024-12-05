@@ -19,6 +19,7 @@
             <a href="admin-index.html">Quản lý doanh thu</a>
             <a href="menu-management.html">Quản lý thực đơn</a>
             <a href="order-management.html">Quản lý đơn hàng</a>
+            <a href="promotion.html">Danh sách khuyến mãi</a>
             <a href="customer.html">Quản lý khách hàng</a>
             <a href="setting-admin.html">Cài đặt</a>
         </div>
@@ -28,11 +29,21 @@
     <!-- Content -->
     <div class="content">
         <!-- Settings Section -->
-        <div id="settings" class="section">
-            <h2>Cài đặt</h2>
-            <p>Thay đổi thông tin cửa hàng:</p>
-            <button>Chỉnh sửa</button>
-        </div>
+            <div id="create-admin" class="section">
+                <h2>Tạo mới tài khoản Admin</h2>
+                <form action="#" method="POST" class="create-form">
+                    <label for="username">Tên tài khoản:</label>
+                    <input type="text" id="username" name="username" placeholder="Nhập email/sđt" required>
+
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+                    <label for="confirm-password">Xác nhận mật khẩu:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Nhập lại mật khẩu" required>
+                    <button type="submit">Tạo tài khoản</button>
+                </form>
+            </div>
+
     </div>
 </div>
 
